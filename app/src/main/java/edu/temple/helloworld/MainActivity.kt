@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             if (nameEditText.text.isEmpty()) {
                 nameEditText.setError("Please enter a name")
             } else {
-                displayTextView.text = "Hello, ${findViewById<EditText>(R.id.nameEditText).text}"
+                displayTextView.text = "Hello, ${nameEditText.text}"
             }
         }
 
